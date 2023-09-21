@@ -7,6 +7,15 @@ from concurrent.futures import ThreadPoolExecutor
 from termcolor import colored, cprint
 
 def convert_docx_to_pdf(docx_file, pdf_file, retries=3):
+    """
+    Convert a .docx file to .pdf format.
+    
+    :param docx_file: Path to the .docx file.
+    :param pdf_file: Path to save the generated .pdf file.
+    :param retries: Number of retry attempts. Default is 3.
+    :return: True if conversion is successful, False otherwise.
+    """
+
     logger = logging.getLogger(__name__)
     pythoncom.CoInitialize()
     for i in range(retries + 1):
