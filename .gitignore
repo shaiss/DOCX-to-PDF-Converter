@@ -1,0 +1,8 @@
+# .gitignore
+
+# Ignore all .docx and .pdf files
+*.docx
+*.pdf
+
+# Ignore log files
+docx2pdf.log

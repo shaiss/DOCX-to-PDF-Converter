@@ -1,0 +1,4 @@
+# requirements.txt
+
+docx2pdf
+termcolor
